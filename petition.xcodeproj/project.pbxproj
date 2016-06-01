@@ -16,6 +16,7 @@
 		C002988D1CFF98C300E216CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C002988B1CFF98C300E216CA /* LaunchScreen.storyboard */; };
 		C00298981CFF98C300E216CA /* petitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00298971CFF98C300E216CA /* petitionTests.swift */; };
 		C00298A31CFF98C300E216CA /* petitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00298A21CFF98C300E216CA /* petitionUITests.swift */; };
+		C00298B11CFF990D00E216CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00298B01CFF990D00E216CA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C002989E1CFF98C300E216CA /* petitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00298A21CFF98C300E216CA /* petitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petitionUITests.swift; sourceTree = "<group>"; };
 		C00298A41CFF98C300E216CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00298B01CFF990D00E216CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00298B11CFF990D00E216CA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		C00298711CFF98C200E216CA = {
 			isa = PBXGroup;
 			children = (
+				C00298B01CFF990D00E216CA /* MapKit.framework */,
 				C002987C1CFF98C300E216CA /* petition */,
 				C00298961CFF98C300E216CA /* petitionTests */,
 				C00298A11CFF98C300E216CA /* petitionUITests */,
@@ -199,6 +203,15 @@
 				TargetAttributes = {
 					C00298791CFF98C200E216CA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 63Q4C7FKLV;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C00298921CFF98C300E216CA = {
 						CreatedOnToolsVersion = 7.3.1;
